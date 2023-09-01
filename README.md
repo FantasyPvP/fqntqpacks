@@ -10,7 +10,7 @@ this may be useful if you regularly create resourcepacks and want to organise yo
 
 - you'll need a projects folder named whatever you want
 - compile the binary in release mode with
- > cargo run --release
+ > cargo build --release
 - place the binary in the projects folder
 - any resourcepacks you're working on should be in subdirectories of this folder
 - when the binary is run, any subdirectories containing a pack.mcmeta file will have their contents archived and copied to _resourcepacks in your projects dir
