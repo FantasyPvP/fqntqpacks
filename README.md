@@ -6,6 +6,23 @@
 
 this may be useful if you regularly create resourcepacks and want to organise your projects in different folders. 
 
+## how to use
+
+- you'll need a projects folder named whatever you want
+- compile the binary in release mode with
+ > cargo run --release
+- place the binary in the projects folder
+- any resourcepacks you're working on should be in subdirectories of this folder
+- when the binary is run, any subdirectories containing a pack.mcmeta file will have their contents archived and copied to _resourcepacks in your projects dir
+- any existing zip files will also be copied into _resourcepacks
+- you should make your .minecraft/resourcepacks folder a shortcut/symlink to _resourcepacks in your projects dir
+WARNING: before running, ensure that any packs you want to keep are moved to your projects directory, _resourcepacks will be deleted and replaced each time the binary is run
+- any folder prefixed with an underscore will be ignored
+
+here is an example layout:
+![image](https://github.com/FantasyPvP/fqntqpacks/assets/80643031/e9603295-abe3-4eeb-872b-9cf75254eca8)
+
+
 ## features
 - the utility recursively scans directories in the project folder and organises packs into a folder
 
