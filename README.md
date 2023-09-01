@@ -6,6 +6,11 @@
 
 this may be useful if you regularly create resourcepacks and want to organise your projects in different folders. 
 
+## platform support
+
+- developed on and tested for linux
+- should work on windows and mac as well as it's not using platform specific libraries
+
 ## how to use
 
 - you'll need a projects folder named whatever you want
